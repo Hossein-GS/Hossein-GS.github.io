@@ -59,20 +59,67 @@ h2 {
 }
 
 .gallery {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
+    width: 100%;
     gap: 20px;
 }
 
 .project-card {
+    width: 100%;
+    max-width: 800px; /* Optional: set a max-width to limit card width on larger screens */
     background-color: #fff;
     padding: 1.5em;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 300px;
     text-align: center;
+    position: relative;
 }
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+/* Style for the slideshow images */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    border-radius: 8px;
+    display: none;
+}
+
+.slide:first-of-type {
+    display: block;
+}
+
+/* Style for the navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 
 .project-card h3 {
     font-size: 1.5em;
