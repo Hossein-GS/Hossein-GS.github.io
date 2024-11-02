@@ -1,20 +1,61 @@
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* Add styles for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    background-color: #333; /* Dark background for contrast */
+    padding: 10px 0; /* Padding for the navigation bar */
+    position: sticky; /* Makes the navigation sticky */
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+
+.navbar a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding around links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.navbar a:hover {
+    background-color: #575757; /* Darker background on hover */
+    color: #ffd700; /* Change text color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Optional: Add media query for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+    .navbar a {
+        padding: 15px; /* Increase padding on smaller screens */
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #F4EEE0;
 }
 
 header {
     text-align: center;
     padding: 2em;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
 }
 
@@ -26,7 +67,7 @@ header h1 {
 header p {
     font-size: 1.2em;
     font-weight: 300;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 header nav a {
@@ -73,10 +114,18 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 0.5em;
     position: relative;
 }
 
 .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.project-card video {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -94,6 +143,15 @@ h2 {
     border-radius: 8px;
     display: none;
 }
+
+/* Custom style for smaller images in project cards */
+.small-slide {
+    width: 10%; /* Adjust width to control size */
+    height: auto;
+    margin: 0 auto; /* Center the image */
+    display: block;
+}
+
 
 .slide:first-of-type {
     display: block;
@@ -134,10 +192,270 @@ h2 {
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
 }
 
 footer p {
     font-size: 0.9em;
 }
+
+.github-button {
+    position: relative; /* Change to relative */
+    top: -15px; /* Adjust this value as needed */
+    right: 0px; /* Keep right for positioning */
+    background-color: #333; 
+    color: white; 
+    border-radius: 50%;
+    width: 36px; 
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 10; /* Ensure it's above everything else */
+}
+
+
+.github-button:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+.github-button i {
+    font-size: 16px; /* Icon size */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Wraps items to the next line */
+    justify-content: center; /* Centers items */
+    margin: 20px 0; /* Space around the container */
+}
+
+.skill {
+    text-align: center; /* Centers text under the icon */
+    margin: 15px; /* Spacing between skill items */
+    width: 100px; /* Set width for each skill */
+}
+
+.skill i {
+    font-size: 40px; /* Size of the icon */
+    display: block; /* Block display for stacking */
+    margin-bottom: 5px; /* Space between icon and text */
+}
+
+.skill p {
+    margin: 0; /* Removes default margin from paragraphs */
+}
+
+.skill .fa-html5 {
+    color: #e34c26; /* HTML5 orange */
+}
+
+.skill .fa-css3-alt {
+    color: #264de4; /* CSS3 blue */
+}
+
+.skill .fa-js {
+    color: #f0db4f; /* JavaScript yellow */
+}
+
+.skill .fa-react {
+    color: #61DBFB; /* React cyan */
+}
+
+.skill .fa-node-js {
+    color: #3C873A; /* Node.js green */
+}
+
+.skill .fa-python {
+    color: #306998; /* Python blue */
+}
+
+.skill .fa-java {
+    color: #f89820; /* Java orange */
+}
+
+.skill .fa-git-alt {
+    color: #f34f29; /* Git orange */
+}
+
+.skill .fa-linux {
+    color: #fcc624; /* Linux yellow */
+}
+
+.skill .fa-database {
+    color: #336791; /* SQL blue */
+}
+
+.skill .fa-brain {
+    color: #f39c12; /* AI yellow */
+}
+
+.skill .fa-microchip {
+    color: #4d4d4d; /* Hardware gray */
+}
+
+.skill .fa-paint-brush {
+    color: #2db940; /* Design yellow */
+}
+
+.publication-card {
+    width: 100%;
+    max-width: 800px; /* Optional: set a max-width to limit card width on larger screens */
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.publication-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 30px; /* Space between icons */
+    justify-content: center; /* Center-align icons */
+    margin-top: 10px; /* Space above the buttons */
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center-align icons */
+    width: 36px; /* Size of the button */
+    height: 36px;
+    border-radius: 50%; /* Makes the button round */
+    color: #fff;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.social-btn i {
+    font-size: 25px;
+}
+
+/* Hover effects */
+.social-btn.linkedin:hover {
+    background-color: #005582;
+}
+
+.social-btn.github:hover {
+    background-color: #2b205c;
+}
+
+.social-btn.stackoverflow:hover {
+    background-color: #d46918;
+}
+
+.social-btn.email:hover {
+    background-color: #f32929;
+}
+
+/* Back-to-Top Button */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Hidden by default */
+    width: 50px;
+    height: 50px;
+    background-color: #333; /* Dark background color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for button */
+#backToTopBtn:hover {
+    background-color: #555; /* Darker background on hover */
+    transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* Show the button when scrolled down */
+.show {
+    display: block;
+}
+
+.email-dropdown {
+    display: none; /* Initially hidden */
+    position: absolute; /* Position relative to the closest positioned ancestor */
+    background-color: #333; /* Background color of the bubble */
+    color: white; /* Text color */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the bubble */
+    z-index: 100; /* Ensure it is above other elements */
+    width: max-content; /* Width adjusts to the content */
+    top: 45px; /* Position above the button (adjust as necessary) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.email-dropdown::after {
+    content: ''; /* Creates an arrow effect */
+    position: absolute;
+    left: 96%; /* Center the arrow */
+    transform: translateX(-100%); /* Center the arrow */
+    bottom: 100%; /* Position above the bubble */
+    border-width: 5px; /* Size of the arrow */
+    border-style: solid;
+    border-color: transparent transparent white transparent; /* Triangle effect pointing down */
+}
+
+
+/* Show the email dropdown when active */
+.show-email {
+    display: block;
+    top: 35px; /* Adjust the vertical position */
+    left: 50%; /* Center it under the icon */
+    transform: translateX(-50%); /* Center the dropdown */
+}
+
+.copy-email-btn {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 12px; /* Padding inside the button */
+    cursor: pointer; /* Cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.copy-email-btn:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.cv-card {
+    width: 100%;
+    max-width: 800px; /* Optional: set a max-width to limit card width on larger screens */
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.cv-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+

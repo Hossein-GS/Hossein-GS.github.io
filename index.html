@@ -5,21 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossein Shahri | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 </head>
 <body>
     <header>
         <h1>Hossein Shahri</h1>
         <p>Web Developer | Designer | Programmer | AI Enthusiast</p>
-        <nav>
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/hossein-shahri" target="_blank" class="social-btn linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Hossein-GS" target="_blank" class="social-btn github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://stackoverflow.com/users/22211289/hgs" target="_blank" class="social-btn stackoverflow">
+                <i class="fab fa-stack-overflow"></i>
+            </a>
+            <a href="javascript:void(0);" class="social-btn email" onclick="toggleEmailDropdown()">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <span id="emailDropdown" class="email-dropdown" >
+                <button id="copyEmailBtn" onclick="copyEmail()" class="copy-email-btn"> H.Hossien2022@gmail.com  </button> 
+            </span>
+        </div>
+        <nav class="navbar">
             <a href="#about">About Me</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#publications">Publications</a>
+            <a href="#skills">Skills</a>
+            <a href="#myCV">My CV</a>
         </nav>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm Hossein Shahri, a dedicated computer engineering graduate with hands-on experience as a full-stack developer. I specialize in building responsive, high-performance web applications using React, Node.js, and other modern frameworks. My projects span across AI-driven education tools, mobile apps for plant disease classification, and embedded systems, reflecting my diverse skill set and problem-solving capabilities. Driven by a passion for technology and innovation, I’m always eager to tackle complex challenges and learn new skills. Let’s connect to discuss how I can bring value to your team or project!</p>
+        <p>My name is Hossein, a dedicated computer engineering graduate with hands-on experience as a full-stack developer.</p><p> I specialize in building responsive, high-performance web applications using React, Node.js, and other modern frameworks. My projects span across AI-driven education tools, mobile apps for plant disease classification, and embedded systems, reflecting my diverse skill set and problem-solving capabilities. Driven by a passion for technology and innovation, I’m always eager to tackle complex challenges and learn new skills. Let’s connect to discuss how I can bring value to your team or project!</p>
     </section>
 
     <section id="projects">
@@ -29,31 +50,189 @@
                 <div class="slideshow-container">
                     <img class="slide" src="./RealEstateProject/1.PNG" alt="Project 1 Image 1">
                     <img class="slide" src="./RealEstateProject/2.PNG" alt="Project 1 Image 2" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/9.PNG" alt="Project 1 Image 9" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/10.PNG" alt="Project 1 Image 10" style="display:none;">
                     <img class="slide" src="./RealEstateProject/3.PNG" alt="Project 1 Image 3" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/4.PNG" alt="Project 1 Image 4" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/5.PNG" alt="Project 1 Image 5" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/6.PNG" alt="Project 1 Image 6" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/7.PNG" alt="Project 1 Image 7" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/8.PNG" alt="Project 1 Image 8" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/11.PNG" alt="Project 1 Image 11" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/12.PNG" alt="Project 1 Image 12" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/13.PNG" alt="Project 1 Image 13" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/14.PNG" alt="Project 1 Image 14" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/15.PNG" alt="Project 1 Image 15" style="display:none;">
+                    <img class="slide" src="./RealEstateProject/16.PNG" alt="Project 1 Image 16" style="display:none;">
                     <button class="prev" onclick="plusSlides(-1, 0)">&#10094;</button>
                     <button class="next" onclick="plusSlides(1, 0)">&#10095;</button>
                 </div>
-                <h3>Real Estate Commission Tracking System</h3>
-                <p>Brief description of your project.</p>
+                <a href="https://github.com/Hossein-GS/Real-Estate-Commission-System" target="_blank">
+                    <h3>Real Estate Commission Tracking System</h3>
+                </a>
+                <p>An ERP system that allows Real Estate Companies track commission earnings, by allowing agents to perform data entry operations to add certain informations, such as Contracts, Developers, Locations, Source, and etc. it also allows them to view the commission earning of each agent in the form of charts and graphs</p>
             </div>
+
+            <div class="project-card">
+                <div class="slideshow-container">
+                    <img class="slide" src="./AccountingSystemProject/1.png" alt="Project 2 Image 1">
+                    <img class="slide" src="./AccountingSystemProject/2.png" alt="Project 2 Image 2" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/3.png" alt="Project 2 Image 9" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/4.png" alt="Project 2 Image 10" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/5.png" alt="Project 2 Image 3" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/6.png" alt="Project 2 Image 4" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/7.png" alt="Project 2 Image 5" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/8.png" alt="Project 2 Image 6" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/9.png" alt="Project 2 Image 7" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/10.png" alt="Project 2 Image 8" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/11.png" alt="Project 2 Image 11" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/12.png" alt="Project 2 Image 12" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/13.png" alt="Project 2 Image 13" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/14.png" alt="Project 2 Image 14" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/15.png" alt="Project 2 Image 15" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/16.png" alt="Project 2 Image 16" style="display:none;">
+                    <img class="slide" src="./AccountingSystemProject/17.png" alt="Project 2 Image 16" style="display:none;">
+                    <button class="prev" onclick="plusSlides(-1, 1)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 1)">&#10095;</button>
+                </div>
+                <a href="https://github.com/Hossein-GS/accounting-system" target="_blank">
+                    <h3>Accounting ERP System</h3>
+                </a>
+                <p>An accounting ERP, that allows companies to manage their variable/fixed expenses, and enter the salary amount of every employee that will be added to the final amount due every month. This ERP also allows that generation of invoices from transactions.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="slideshow-container">
+                    <img class="slide" src="./AITutorProject/1.png" alt="Project 3 Image 1">
+                    <img class="slide" src="./AITutorProject/2.png" alt="Project 3 Image 2" style="display:none;">
+                    <img class="slide" src="./AITutorProject/3.png" alt="Project 3 Image 9" style="display:none;">
+                    <img class="slide" src="./AITutorProject/4.png" alt="Project 3 Image 10" style="display:none;">
+                    <button class="prev" onclick="plusSlides(-1, 2)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 2)">&#10095;</button>
+                </div>
+                <h3>AI Tutor - Personalized Instructor</h3>
+                <p>A Personalized Tutor made using GPT4 technology, that allows students to have one on one tutoring sessions as well as educational video generation using Invideo AI.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="slideshow-container">
+                    <img class="slide small-slide" src="./PlantMonitoringProject/1.png" alt="Project 4 Image 1">
+                    <img class="slide small-slide" src="./PlantMonitoringProject/2.png" alt="Project 4 Image 2" style="display:none;">
+                    <img class="slide small-slide" src="./PlantMonitoringProject/3.png" alt="Project 4 Image 3" style="display:none;">
+                    <img class="slide small-slide" src="./PlantMonitoringProject/4.png" alt="Project 4 Image 4" style="display:none;">
+                    <button class="prev" onclick="plusSlides(-1, 3)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 3)">&#10095;</button>
+                </div>
+                <h3>Plant Monitoring & Disease Classification APP</h3>
+                <p>An Application that allows user to monitor their plants status such as humidity, moisture, and temperature. The measurements will be taken from sensors that are connected to a raspberry pi. Furthermore the user can examine the condition of the plant using AI (Gemini) to get notified if the plant condition is dangerous. The user can also take a picture of the plant to identify the type of disease it has.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="slideshow-container">
+                    <img class="slide" src="./MikroPongProject/1.jpeg" alt="Project 5 Image 1">
+                    <img class="slide" src="./MikroPongProject/2.png" alt="Project 5 Image 2" style="display:none;">
+                    <video class="slide small-slide" controls>
+                        <source src="./MikroPongProject/ProjectVideoSample.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button class="prev" onclick="plusSlides(-1, 4)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 4)">&#10095;</button>
+                </div>
+                <h3>MikroPong - A Pong Game Made With a Microcontroller</h3>
+                <p>In this project we used a Microcontroller to make a pong game that allows up to 2 players, It features 2 7-segment displays for showing the score, 4 buttons for the paddle movements, and a piezo buzzer that makes a noise everytime the ball hits the wall or the goal.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication-card">
+            <img class="slide"  src="./Publications/report.PNG" alt="AI Tutor Publication Image">
+            <h3>Elevating Education through AI Tutor: Utilizing GPT-4 for Personalized Learning</h3>
+            <h5>Published on: <a href="https://ieeexplore.ieee.org/document/10604578" target="_blank">IEEE Xplore</a></h5>
+            <p>This paper discusses how the current educational system can improve with the use of Artificial Intelligence. It outlines existing technologies and their weaknesses, and provides a solution that can make education more personalized</p>
         </div>
     </section>
     
-    
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you’d like to get in touch, please reach out!</p>
-        <ul>
-            <li>Email: H.Hossien2022@gmail.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/hossein-shahri" target="_blank">Hossein Shahri</a></li>
-            <li>GitHub: <a href="https://github.com/Hossein-GS" target="_blank">Hossein-GS</a></li>
-        </ul>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-node-js"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-git-alt"></i>
+                <p>Git</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-linux"></i>
+                <p>Linux</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-microchip"></i>
+                <p>Embedded Systems</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-brain"></i>
+                <p>AI</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-paint-brush"></i>
+                <p>UI/UX Design</p>
+            </div>
+        </div>
     </section>
+
+    <section id="myCV">
+        <h2>My CV</h2>
+        <div class="cv-card">
+            <img src="./cv_preview.PNG" alt="CV Image">
+            <h3>My Latest Curriculum Vitae</h3>
+            <a href="./Hossein_Shahri_CV.pdf" target="_blank" class="cv-btn">
+                <h4>Download CV</h4>
+            </a>
+        </div>
+    </section>
+
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
 
     <footer>
         <p>&copy; 2024 Hossein-GS</p>
     </footer>
     <script src="script.js"></script>
+
 </body>
 </html>
