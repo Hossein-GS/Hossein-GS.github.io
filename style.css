@@ -301,6 +301,26 @@ footer p {
     color: #2db940; /* Design yellow */
 }
 
+.skill .fa-wordpress {
+    color: #21759b; /* WordPress blue */
+}
+
+.skill .fa-shopify {
+    color: #7ab55c; /* Shopify green */
+}
+
+.skill .fa-figma {
+    color: #f24e1e; /* Figma orange */
+}
+
+.skill .fa-chart-line {
+    color: #00c853; /* Analytics green */
+}
+
+.skill .fa-aws {
+    color: #ff9900; /* AWS orange */
+}
+
 .publication-card {
     width: 100%;
     max-width: 800px; /* Optional: set a max-width to limit card width on larger screens */
@@ -452,6 +472,32 @@ footer p {
 }
 
 .cv-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.gallery-certificates {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.certificate-card {
+    width: 25%;
+    max-width: 800px; /* Optional: set a max-width to limit card width on larger screens */
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.certificate-card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
