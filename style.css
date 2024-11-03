@@ -441,7 +441,7 @@ footer p {
 .show-email {
     display: block;
     top: 35px; /* Adjust the vertical position */
-    left: 50%; /* Center it under the icon */
+    left: 48.4%; /* Center it under the icon */
     transform: translateX(-50%); /* Center the dropdown */
 }
 
@@ -456,6 +456,54 @@ footer p {
 }
 
 .copy-email-btn:hover {
+    background-color: #d8d3d3; /* Darker background on hover */
+}
+
+.phone-dropdown {
+    display: none; /* Initially hidden */
+    position: absolute; /* Position relative to the closest positioned ancestor */
+    background-color: #f3f3f3; /* Background color of the bubble */
+    color: white; /* Text color */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the bubble */
+    z-index: 100; /* Ensure it is above other elements */
+    width: max-content; /* Width adjusts to the content */
+    top: 45px; /* Position above the button (adjust as necessary) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.phone-dropdown::after {
+    content: ''; /* Creates an arrow effect */
+    position: absolute;
+    left: 96%; /* Center the arrow */
+    transform: translateX(-100%); /* Center the arrow */
+    bottom: 100%; /* Position above the bubble */
+    border-width: 5px; /* Size of the arrow */
+    border-style: solid;
+    border-color: transparent transparent white transparent; /* Triangle effect pointing down */
+}
+
+
+/* Show the email dropdown when active */
+.show-phone {
+    display: block;
+    top: 35px; /* Adjust the vertical position */
+    left: 55%; /* Center it under the icon */
+    transform: translateX(-50%); /* Center the dropdown */
+}
+
+.copy-phone-btn {
+    background-color: #f3f3f3; /* Dark background color */
+    color: black; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 12px; /* Padding inside the button */
+    cursor: pointer; /* Cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.copy-phone-btn:hover {
     background-color: #d8d3d3; /* Darker background on hover */
 }
 

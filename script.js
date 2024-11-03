@@ -74,4 +74,29 @@ function copyEmail() {
     });
 }
 
+function togglePhoneDropdown() {
+    const phoneDropdown = document.getElementById("phoneDropdown");
+    phoneDropdown.classList.toggle("show-phone");
+}
+
+// Optional: Close dropdown if clicked outside
+window.addEventListener('click', function(event) {
+    const phoneDropdown = document.getElementById("phoneDropdown");
+    if (!event.target.closest('.phone') && phoneDropdown.classList.contains('show-phone')) {
+        phoneDropdown.classList.remove('show-phone');
+    }
+});
+
+function copyPhone() {
+    const phone = "+971 50 889 1909";
+    
+    navigator.clipboard.writeText(phone).then(() => {
+        alert("Phone number copied to clipboard!");
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
+
+
+
 
