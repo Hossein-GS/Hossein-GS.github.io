@@ -504,4 +504,9 @@ footer p {
     margin-bottom: 1em;
 }
 
+@media (max-width: 768px) {
+    .certificate-card {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+}
 
